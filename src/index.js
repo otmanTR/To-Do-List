@@ -3,22 +3,22 @@ import './style.css';
 
 const tasks = [
   {
-    description: 'Write a  ',
+    description: 'Walk with Pablo  ',
     complated: false,
     index: 1,
   },
   {
-    description: 'On page  tasks ',
+    description: 'Buy a flower ',
     completed: false,
     index: 2,
   },
   {
-    description: 'The list should aalues for each task.',
+    description: 'Call mom',
     completed: false,
     index: 3,
   },
   {
-    description: 'Create a styler t List',
+    description: 'Find yours love of lifes',
     completed: false,
     index: 4,
   },
