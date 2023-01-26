@@ -8,25 +8,23 @@ const tasks = [
     index: 1,
   },
   {
-    discription: 'On page  tasks ',
+    description: 'On page  tasks ',
     completed: false,
     index: 2,
   },
   {
-    discription: 'The list should aalues for each task.',
+    description: 'The list should aalues for each task.',
     completed: false,
     index: 3,
   },
   {
-    discription: 'Create a styler t List',
+    description: 'Create a styler t List',
     completed: false,
     index: 4,
   },
 ];
 
 const taskList = document.querySelector('.taskList');
-// eslint-disable-next-line no-unused-vars
-let checkBoxInput = document.createElement('input');
 
 const generateTask = () => {
   for (let i = 0; i < tasks.length; i += 1) {
@@ -36,7 +34,6 @@ const generateTask = () => {
     <label class="label" id="label" for="checked">${tsk.discription}</label>
     <i class="fa-solid fa-ellipsis-vertical"></i>
    </li>`;
-    checkBoxInput = true;
   }
 };
 
