@@ -13,8 +13,7 @@ const tasks = [
     index: 2,
   },
   {
-    discription:
-      'The list should aalues for each task.',
+    discription: 'The list should aalues for each task.',
     completed: false,
     index: 3,
   },
@@ -26,10 +25,11 @@ const tasks = [
 ];
 
 const taskList = document.querySelector('.taskList');
+// eslint-disable-next-line no-unused-vars
 let checkBoxInput = document.createElement('input');
 
 const generateTask = () => {
-  for (let i = 0; i < tasks.length; i++) {
+  for (let i = 0; i < tasks.length; i += 1) {
     const tsk = tasks[i];
     taskList.innerHTML += `<li class="task flex">
     <input type="checkbox" id="checked" name="checked" >
