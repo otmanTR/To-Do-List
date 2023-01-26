@@ -3,7 +3,7 @@ import './style.css';
 
 const tasks = [
   {
-    discription: 'Write a  ',
+    description: 'Write a  ',
     complated: false,
     index: 1,
   },
@@ -31,7 +31,7 @@ const generateTask = () => {
     const tsk = tasks[i];
     taskList.innerHTML += `<li class="task flex">
     <input type="checkbox" id="checked" name="checked" >
-    <label class="label" id="label" for="checked">${tsk.discription}</label>
+    <label class="label" id="label" for="checked">${tsk.description}</label>
     <i class="fa-solid fa-ellipsis-vertical"></i>
    </li>`;
   }
