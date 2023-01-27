@@ -76,8 +76,7 @@ class Todolist {
   };
 
   addtask = (description, completed, index) => {
-    index = 1;
-    index = this.taskData.length;
+    index = 1 + this.taskData.length;
     const newtask = new Tasks(description, completed, index);
     this.taskData.push(newtask);
     if (typeof window !== 'undefined') {
