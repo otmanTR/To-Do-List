@@ -107,6 +107,8 @@ Install this project with: Git bash
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #In the future, I will change layouts and make the design more professional. And I will change colors, black and green are more suitable for my project. I will connect all pages to each other.# 🔭 Future Features <a name="future-features"></a>
+- [ ] **[New background]**
+- [ ] **[Create mobile version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,5 +141,5 @@ I would like to thank for Microverse to provide me learning materials, my peers 
 
 
 ## 📝 License <a name="license"></a>
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
