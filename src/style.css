@@ -9,21 +9,31 @@
 body {
   overflow: hidden;
   background-color: #f6f6f6;
-  font-family: "Open Sans", "Lucida Grande", tahoma, verdana, arial, sans-serif;
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-.flex {
-  display: flex;
+button {
+  cursor: pointer;
 }
 
-.titleIcon {
+.flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.delete {
+  display: none;
+}
+
+.active {
+  display: inline;
 }
 
 .tasks {
@@ -32,14 +42,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin: 30px 0;
 }
 
 .title {
   padding: 10px;
-  flex-direction: column;
-  list-style-type: none;
 }
 
 .title i {
@@ -49,21 +57,21 @@ ul {
 .tasks section {
   background-color: #fff;
   width: 70%;
-  padding: 30px;
+  padding: 10px;
+  padding-bottom: 0;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
 }
 
-.addTasks {
+.add-tasks {
   width: 100%;
-  list-style-type: none;
 }
 
 .form {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.addTask input {
+.add-task input {
   padding: 0 40px 0 1rem;
   line-height: 50px;
   border: none;
@@ -72,7 +80,7 @@ ul {
   height: 50px;
 }
 
-.addTask input::placeholder {
+.add-task input::placeholder {
   font-size: 15px;
   color: #c1bfbf;
 }
@@ -80,51 +88,49 @@ ul {
 .form i {
   font-size: 10px;
   color: #c1bfbf;
-  flex-direction: row;
-  margin-left: 30%;
-  margin-top: 20px;
 }
 
-.task {
+.task-list li {
   position: relative;
   background-color: #fff;
   padding: 0 49px 0 1em;
   font-size: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   font-weight: 300;
-  height: 70px;
+  height: 50px;
   letter-spacing: 1px;
-  align-items: center;
 }
 
-.task .label {
-  width: 100%;
+.task-list li .label {
   line-height: 20px;
   word-wrap: break-word;
-  margin-left: 20px;
+  padding: 0 100px;
 }
 
-.task i {
+.task-list li i {
   opacity: 0.2;
   float: right;
   margin-right: -3em;
   padding: 0 0.5rem;
   line-height: 0;
-  cursor: move;
-
-  /* font-size: 10px; */
+  cursor: pointer;
 }
 
-.taskList {
-  align-items: center;
-}
-
-.clearAllBtn {
-  background-color: rgb(84, 77, 77);
-  color: gainsboro;
-  margin-bottom: 30px;
-  width: 30%;
-  height: 60px;
+.clear-all {
   margin-top: 30px;
-  margin-left: 30%;
+  margin-bottom: 0;
+  padding: 10px;
+  border: none;
+  margin-right: -10px;
+  margin-left: -10px;
+  width: 103.5%;
+  font-size: 17px;
+}
+
+.delete-all {
+  cursor: pointer;
+}
+
+.clear-all:hover {
+  text-decoration: underline;
 }
