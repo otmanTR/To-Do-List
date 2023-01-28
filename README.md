@@ -60,7 +60,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-coming soon
+
+[Live Demo](https://otmantr.github.io/To-Do-List/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
