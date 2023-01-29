@@ -10,6 +10,8 @@ body {
   overflow: hidden;
   background-color: #f6f6f6;
   font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  background-image: url(../ToDoList.jpg);
+  background-size: cover
 }
 
 ul {
