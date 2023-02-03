@@ -111,6 +111,7 @@ class Todolist {
       localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
       this.displayTask();
     }
+    return  this.taskData[item].description;
   }
 
   clearAllCompletTask = () => {
