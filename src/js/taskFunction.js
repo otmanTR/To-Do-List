@@ -1,5 +1,9 @@
-import Tasks from './tasks.js';
-import TaskStatus from './taskStatus.js';
+
+const Tasks = require('./tasks.js');
+const TaskStatus = require('./taskStatus.js');
+
+// import Tasks from './tasks.js';
+// import TaskStatus from './taskStatus.js';
 
 class Todolist {
   constructor() {
@@ -99,7 +103,7 @@ class Todolist {
       this.displayTask();
     }
   }
-
+  
   updateTask(item, description) {
     if (this.taskData[item]) {
       this.taskData[item].description = description;
