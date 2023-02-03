@@ -6,9 +6,7 @@ describe('testing editing task', () => {
   let description = 'burak';
   const completed = true;
   const index = 1;
-  let additem = [];
-  additem = todo.addtask(description, completed, index);
-
+  todo.addtask(description, completed, index);
   test('Updating Description', () => {
     description = 'christian';
     const newDescription = todo.updateTask(0, description);
@@ -24,7 +22,7 @@ describe('testing editing task', () => {
     const description = 'burak';
     const completed = true;
     const index = 1;
-    additem = todo.addtask(description, completed, index);
+    todo.addtask(description, completed, index);
     const Updatestatus = todo.Updatestatus(0, description);
     expect(Updatestatus).toBe(true);
   });
