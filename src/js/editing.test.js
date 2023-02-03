@@ -4,9 +4,11 @@ const Todolist = require('./editing.js');
 describe('testing editing task', () => {
   const todo = new Todolist();
   let description = 'burak';
-  let completed = true;
+  const completed = true;
   const index = 1;
-  let additem = todo.addtask(description, completed, index);
+  let additem = [];
+  additem = todo.addtask(description, completed, index);
+
   test('Updating Description', () => {
     description = 'christian';
     const newDescription = todo.updateTask(0, description);
@@ -19,8 +21,8 @@ describe('testing editing task', () => {
   });
 
   test('changing status', () => {
-    let description = 'burak';
-    let completed = true;
+    const description = 'burak';
+    const completed = true;
     const index = 1;
     additem = todo.addtask(description, completed, index);
     const Updatestatus = todo.Updatestatus(0, description);

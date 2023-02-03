@@ -5,6 +5,7 @@ class Todolist {
   constructor() {
     this.taskData = [];
   }
+
   addtask = (description, completed, index) => {
     const newtask = new Tasks(description, completed, index);
     this.taskData.push(newtask);
@@ -41,16 +42,17 @@ class Todolist {
     return this.taskData;
   };
 
-  Updatestatus = (item, description) => {
+  Updatestatus = (item) => {
     const status = new TaskStatus();
     if (this.taskData[item]) {
       if (this.taskData[item].completed === true) {
         return status.checked(this.taskData[item]);
-      } else {
-        return status.unchecked(this.taskData[item]);
       }
+
+      return status.unchecked(this.taskData[item]);
     }
-  };
+    return this.taskData;
+  }
 }
 
 module.exports = Todolist;

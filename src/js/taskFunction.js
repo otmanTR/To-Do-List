@@ -1,4 +1,3 @@
-
 const Tasks = require('./tasks.js');
 const TaskStatus = require('./taskStatus.js');
 
@@ -103,7 +102,7 @@ class Todolist {
       this.displayTask();
     }
   }
-  
+
   updateTask(item, description) {
     if (this.taskData[item]) {
       this.taskData[item].description = description;
@@ -115,7 +114,7 @@ class Todolist {
       localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
       this.displayTask();
     }
-    return  this.taskData[item].description;
+    return this.taskData[item].description;
   }
 
   clearAllCompletTask = () => {
