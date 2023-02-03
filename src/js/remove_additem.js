@@ -4,6 +4,7 @@ class Todolist {
   constructor() {
     this.taskData = [];
   }
+
   addtask = (description, completed, index) => {
     const newtask = new Tasks(description, completed, index);
     this.taskData.push(newtask);
@@ -13,6 +14,7 @@ class Todolist {
     }
     return this.taskData;
   };
+
   removetask = (item) => {
     const key = item;
     if (this.taskData.length === 1) {
