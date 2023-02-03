@@ -1,16 +1,16 @@
 const Todolist = require('./editing.js');
+const Tasks = require('./tasks.js');
 // editing testing
 
 describe('testing editing task', () => {
   const arr = new Todolist();
-  const description = 'burak';
+  let description = 'burak';
   const completed = true;
   const index = 1;
-  const additem = arr.addtask(description, completed, index);
-  console.log(additem);
-  const Tasks = additem[0];
+  let additem = arr.addtask(description, completed, index);
   test('updating description', () => {
-    const newDescription = arr.updateTask(Tasks, "Christian");
-    expect(newDescription).toBe('Christian');
+    description = "christian";
+    const newDescription = arr.updateTask(0, description);
+    expect(newDescription).toBe('christian');
   });
 });

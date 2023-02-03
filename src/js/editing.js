@@ -2,7 +2,7 @@ const Tasks = require('./tasks.js');
 
 class Todolist {
     constructor() {
-      this.taskData = [{ description: 'burak', completed: true, index: 1}];
+      this.taskData = [];
     }
     addtask = (description, completed, index) => {
       const newtask = new Tasks(description, completed, index);
