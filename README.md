@@ -105,6 +105,12 @@ Install this project with: Git bash
 - Twitter: [@hotumanzade](https://twitter.com/hotumanzade)
 - LinkedIn: [Burak Otman](linkedin.com/in/burak-otman-88646443)
 
+👤 **Christian Hakizimana**
+
+- GitHub: [@githubhandle](https://github.com/hakichris)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/hakichris)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #In the future, I will change layouts and make the design more professional. And I will change colors, black and green are more suitable for my project. I will connect all pages to each other.# 🔭 Future Features <a name="future-features"></a>

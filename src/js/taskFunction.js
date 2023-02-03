@@ -164,3 +164,5 @@ clearAllBtn.addEventListener('click', () => {
   window.localStorage.clear();
   window.location.reload();
 });
+
+module.exports = Todolist;
