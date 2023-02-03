@@ -10,6 +10,7 @@ describe('testing addtask and removetask functions', () => {
     const addedTask = arr.addtask(description, completed, index);
     expect(addedTask).toHaveLength(1);
   });
+
   test('remove task from arr', () => {
     const removeTask = arr.removetask(1);
     expect(removeTask).toHaveLength(0);
