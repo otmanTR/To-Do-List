@@ -27,5 +27,17 @@ class Todolist {
     }
     return  this.taskData[item].description
   }
+
+  clearAllCompletTask = () => {
+    this.taskData = this.taskData.filter((elem) => elem.completed === false);
+    this.taskData.forEach((e, index) => {
+      e.index = index;
+    });
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
+      window.location.reload()();
+    }
+    return this.taskData
+  }
 }
 module.exports = Todolist;
