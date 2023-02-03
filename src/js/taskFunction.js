@@ -1,5 +1,8 @@
-import Tasks from './tasks.js';
-import TaskStatus from './taskStatus.js';
+const Tasks = require('./tasks.js');
+const TaskStatus = require('./taskStatus.js');
+
+// import Tasks from './tasks.js';
+// import TaskStatus from './taskStatus.js';
 
 class Todolist {
   constructor() {
@@ -111,6 +114,7 @@ class Todolist {
       localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
       this.displayTask();
     }
+    return this.taskData[item].description;
   }
 
   clearAllCompletTask = () => {
