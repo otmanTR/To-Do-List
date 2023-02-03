@@ -22,7 +22,7 @@ describe('testing editing task', () => {
     let description = 'burak';
     let completed = true;
     const index = 1;
-    let additem = todo.addtask(description, completed, index);
+    additem = todo.addtask(description, completed, index);
     const Updatestatus = todo.Updatestatus(0, description);
     expect(Updatestatus).toBe(true);
   });
