@@ -2,12 +2,10 @@ module.exports = class TaskStatus {
   constructor() {
     this.completed = false;
   }
-
     checked = (task) => {
-      task.completed = true;
+      return  task.completed = true;
     };
-
     unchecked = (task) => {
-      task.completed = false;
+       return task.completed = false;
     };
 };

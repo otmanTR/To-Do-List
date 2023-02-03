@@ -1,18 +1,19 @@
 const Tasks = require('./tasks.js');
+const TaskStatus = require('./taskStatus.js');
 
 class Todolist {
-    constructor() {
-      this.taskData = [];
+  constructor() {
+    this.taskData = [];
+  }
+  addtask = (description, completed, index) => {
+    const newtask = new Tasks(description, completed, index);
+    this.taskData.push(newtask);
+    index = this.taskData.length + 1;
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
     }
-    addtask = (description, completed, index) => {
-      const newtask = new Tasks(description, completed, index);
-      this.taskData.push(newtask);
-      index = this.taskData.length + 1;
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
-      }
-      return this.taskData;
-    };
+    return this.taskData;
+  };
 
   updateTask(item, description) {
     if (this.taskData[item]) {
@@ -25,7 +26,7 @@ class Todolist {
       localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
       this.displayTask();
     }
-    return  this.taskData[item].description
+    return this.taskData[item].description;
   }
 
   clearAllCompletTask = () => {
@@ -35,9 +36,21 @@ class Todolist {
     });
     if (typeof window !== 'undefined') {
       localStorage.setItem('TodoListDB', JSON.stringify(this.taskData));
-      window.location.reload()();
+      window.location.reload();
     }
-    return this.taskData
-  }
+    return this.taskData;
+  };
+
+  Updatestatus = (item, description) => {
+    const status = new TaskStatus();
+    if (this.taskData[item]) {
+      if (this.taskData[item].completed === true) {
+        return status.checked(this.taskData[item]);
+      } else {
+        return status.unchecked(this.taskData[item]);
+      }
+    }
+  };
 }
+
 module.exports = Todolist;
